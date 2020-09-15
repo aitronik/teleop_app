@@ -5,7 +5,7 @@
  
 install kivi: `sudo apt-get install python3-kivy`
 
-install buildozer: `pip3 install --user buildozer`
+install buildozer: `pip3 install --user buildozer` (see https://buildozer.readthedocs.io/en/latest/installation.html for buildozer targeting Android)
 
 ## DEBUG
 
