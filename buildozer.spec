@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = moveApp
+title = teleApp
 
 # (str) Package name
 package.name = myapp
@@ -36,8 +36,9 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,android,pyjnius,jnius,openssl,urllib3,chardet,idna,requests,plyer
+#requirements = python3,kivy,android,pyjnius,jnius,openssl,urllib3,chardet,idna,requests,plyer
 # pybluez
+requirements = python3,kivy,android,pyjnius,jnius,openssl,urllib3,chardet,idna,requests,plyer
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
