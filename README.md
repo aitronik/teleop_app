@@ -34,33 +34,31 @@ The .apk file will be installed on your Android device.
 
 If deploy fails or permission has not been required on device screen:
 
-2.1 Install adb: `sudo apt install android-sdk-platform-tools`
-
-2.2 Follow (https://developer.android.com/studio/run/device) to add user in plugdev group and install _android-sdk-platfrom-tools-common_ for udev rules
-
-2.3 Run: `adb devices`
+2.1 Go to platfomr-tools in andoird-sdk folder (should be ~/.buildozer/android/platform/android-sdk/platform-tools) and run:`./adb devices`
 
 You should see '_no permission_' next to device id. Try to follow these steps:
 
-2.4 Unplug Android device
+2.2 Follow (https://developer.android.com/studio/run/device) to add user in plugdev group and install _android-sdk-platfrom-tools-common_ for udev rules
 
-2.5 Run: `adb kill-server`
+2.3 Unplug Android device
 
-2.6 Run: `adb start-server`
+2.4 Run: `./adb kill-server`
 
-2.7 Connect Android device and check if the "_Allow USB debugging_" popup appears on device screen. If it doesn't, skip to 2.11
+2.5 Run: `./adb start-server`
 
-2.8 Check "_Allow always from this computer_" option and tap OK.
+2.6 Connect Android device and check if the "_Allow USB debugging_" popup appears on device screen. If it doesn't, skip to 2.10
 
-2.9 Run: `adb devices`
+2.7 Check "_Allow always from this computer_" option and tap OK.
 
-2.10 Now you should see the device id followed by the word '_device_'; PC has right permission. Hence go to 1.4 [Section 1]
+2.8 Run: `./adb devices`
+
+2.9 Now you should see the device id followed by the word '_device_'; PC has right permission. Hence go to 1.4 [Section 1]
  
-2.11 In case of popup for permission does not appear, download this repo (https://github.com/M0Rf30/android-udev-rules) to add an Android rule
+2.10 In case of popup for permission does not appear, download this repo (https://github.com/M0Rf30/android-udev-rules) to add an Android rule
 
-2.12 Go to repo folder and run: `sudo cp -v 51-android.rules /etc/udev/rules.d/51-android.rules`
+2.11 Go to repo folder and run: `sudo cp -v 51-android.rules /etc/udev/rules.d/51-android.rules`
 
-2.13 Unplug and reconnect Android device, thus "_Allow USB debugging_" popup should now appear on device screen. Go back to 1.3.2 [Section 1]
+2.12 Unplug and reconnect Android device, thus "_Allow USB debugging_" popup should now appear on device screen. Go back to 1.3.2 [Section 1]
 
 NB. In case of deploy still fails, it might be due to the adb version. Try to download the linux version of Android sdk platform tool from (https://androidsdkmanager.azurewebsites.net/Platformtools), unzip folder and follow steps 2.4 - 2.8 using `./adb` instead of `adb`.
 
