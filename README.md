@@ -1,11 +1,11 @@
 # teleop_app
-**[python3.6 or higher required for next steps, ensure that /usr/bin/python3 is a link to /usr/bin/python3.6 or higher. Check this running python3 on terminal, you should see python3.6 version activated]**
+**[python3.6 or higher required for next steps (python>=3.8 is not yet supported from kivy). Ensure that /usr/bin/python3 is a link to /usr/bin/python3.6 or higher. Check this running python3 on terminal, you should see python3.6 version activated]**
 
 ## REQUIREMEMTS INSTALLATION
  
-install kivi: `sudo apt-get install python3-kivy`
+install kivi: `sudo apt-get install python3-kivy`. If you install kivy in virtual environment run: `pip3 install kivy`
 
-install buildozer: `pip3 install --user buildozer` (see https://buildozer.readthedocs.io/en/latest/installation.html for buildozer targeting Android)
+install buildozer: `pip3 install --user buildozer`. If you install buildozer in virtual environment the `--user` should be removed (see https://buildozer.readthedocs.io/en/latest/installation.html for buildozer targeting Android)
 
 ## DEBUG
 
