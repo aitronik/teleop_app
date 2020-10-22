@@ -1,7 +1,7 @@
 # teleop_app
 **[python3.6 or higher required for next steps (python>=3.8 is not yet supported from kivy). Ensure that /usr/bin/python3 is a link to /usr/bin/python3.6 or higher. Check this running python3 on terminal, you should see python3.6 version activated]**
 
-## REQUIREMEMTS INSTALLATION
+## REQUIREMENTS
  
 install kivi: `sudo apt-get install python3-kivy`. If you install kivy in virtual environment run: `pip3 install kivy`
 
