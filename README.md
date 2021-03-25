@@ -32,7 +32,7 @@ The .apk file will be installed on your Android device.
 
 ### Section 2 - Issues
 
-If deploy fails or permission has not been required on device screen:
+If deploy fails or permission popup does not appears on device screen:
 
 2.1 Install adb: `sudo apt install android-sdk-platform-tools`
 
